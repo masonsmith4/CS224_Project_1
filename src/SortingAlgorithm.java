@@ -6,10 +6,10 @@ public class SortingAlgorithm {
         employeeList.set(index2, temp);
     }//Close swap
 
-    public void bubbleSort(int [] A){
-        for (int i = 0; i < A.length - 1; i++) {
-            for (int j = 0; j < A.length - 1 - i; j++) {
-                if (A[j] > A[j + 1]) {
+    public void bubbleSort(List<Employee> A){
+        for (int i = 0; i < A.size() - 1; i++) {
+            for (int j = 0; j < A.size() - 1 - i; j++) {
+                if (A.get(j).getAge() > A.get(j + 1).getAge()) {
                     swap(A, j, j + 1);
                 }//end if
             } //end inner for
